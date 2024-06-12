@@ -1,5 +1,4 @@
 .employernavbar {
-    
     background-color: white;
     border-bottom: 0.1px solid rgb(233, 232, 232);
     padding: 0% 2%;
@@ -9,22 +8,23 @@
     }
 
     .logo {
-        height: 50px;
-        width: 125px;
+        height: 70px;
+        width: 155px;
+        object-fit: contain;
     }
 
-    .active{
+    .active {
         // border-bottom: 5px solid green;
-        color: green !important
+        color: green !important;
     }
     .nav-item {
         font-weight: bolder !important;
         padding: 3%;
 
-        .dropdown{
+        .dropdown {
             background-color: green;
             border-radius: 30px;
-            .dropdown-toggle{
+            .dropdown-toggle {
                 color: white;
             }
         }

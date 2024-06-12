@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import EventBus from '../../common/EventBus';
-import AuthService from '../../services/auth.service';
-import Logo from "../../Logo.png"
-import '../employer/EmployerNavbar.scss'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import EventBus from "../../common/EventBus";
+import AuthService from "../../services/auth.service";
+import logodhhp from "../../logodhhp.jpg";
+import "../employer/EmployerNavbar.scss";
 const AdminNavbar = () => {
     const [showModeratorBoard, setShowModeratorBoard] = useState(false);
     const [showAdminBoard, setShowAdminBoard] = useState(false);
@@ -35,12 +35,14 @@ const AdminNavbar = () => {
         <nav className="employernavbar navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-expand-md">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/employerhome">
-                    <img className='logo' alt='logo' src={Logo} />
+                    <img className="logo" alt="logo" src={logodhhp} />
                 </a>
 
-                <div className="collapse navbar-collapse flex-fill" id="navbarSupportedContent">
+                <div
+                    className="collapse navbar-collapse flex-fill"
+                    id="navbarSupportedContent"
+                >
                     <ul className=" navbar-nav me-auto mb-lg-0">
-
                         {/* {currentUser ? (
 
                             <li className="nav-item">
@@ -71,7 +73,6 @@ const AdminNavbar = () => {
                             </li>
 
                         ) : (<li></li>)} */}
-
                     </ul>
                     {currentUser ? (
                         <div className="d-flex">
@@ -96,7 +97,10 @@ const AdminNavbar = () => {
                                             {currentUser.username}
                                         </a>
 
-                                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <ul
+                                            className="dropdown-menu"
+                                            aria-labelledby="dropdownMenuLink"
+                                        >
                                             {/* <li>
                                                 <a className="dropdown-item" href={"/employerprofile/" + currentUser.id}>
                                                     Profile
@@ -107,45 +111,46 @@ const AdminNavbar = () => {
                                                     Notifications
                                                 </a>
                                             </li> */}
-                                            
-                                            <li >
-                                                <a href="/adminlogin" className="dropdown-item" onClick={logOut} style={{color:"red"}}>
-                                                Log out
+
+                                            <li>
+                                                <a
+                                                    href="/adminlogin"
+                                                    className="dropdown-item"
+                                                    onClick={logOut}
+                                                    style={{ color: "red" }}
+                                                >
+                                                    Log out
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-
                             </ul>
                         </div>
-                    ) : (
-                        // <div className="d-flex">
-                        //     <ul className="unlogin navbar-nav me-auto mb-2 mb-lg-0" style={{width:"220px"}}>
-                        //         <li className=" nav-item">
-                        //             <Link to={"/employerregister"} className="sign-up nav-link">
-                        //                 Sign Up
-                        //             </Link>
-                        //         </li>
-                        //         <li className=" nav-item">
-                        //             <Link to={"/employerlogin"} className="log-in nav-link">
-                        //                 Login
-                        //             </Link>
-                        //         </li>
-                        //         {/* <li className=" nav-item">
-                        //             <Link to={"/employerlogin"} className="employee-web nav-link">
-                        //                 Apply Jobs
-                        //             </Link>
-                        //         </li> */}
+                    ) : // <div className="d-flex">
+                    //     <ul className="unlogin navbar-nav me-auto mb-2 mb-lg-0" style={{width:"220px"}}>
+                    //         <li className=" nav-item">
+                    //             <Link to={"/employerregister"} className="sign-up nav-link">
+                    //                 Sign Up
+                    //             </Link>
+                    //         </li>
+                    //         <li className=" nav-item">
+                    //             <Link to={"/employerlogin"} className="log-in nav-link">
+                    //                 Login
+                    //             </Link>
+                    //         </li>
+                    //         {/* <li className=" nav-item">
+                    //             <Link to={"/employerlogin"} className="employee-web nav-link">
+                    //                 Apply Jobs
+                    //             </Link>
+                    //         </li> */}
 
-                        //     </ul>
-                        // </div>
-                        null)
-                    }
+                    //     </ul>
+                    // </div>
+                    null}
                 </div>
             </div>
         </nav>
-
     );
 };
 
