@@ -1,5 +1,4 @@
 .employeenavbar {
-    
     background-color: white;
     border-bottom: 0.1px solid rgb(233, 232, 232);
     padding: 0% 2%;
@@ -9,24 +8,27 @@
     }
 
     .logo {
-        height: 50px;
-        width: 125px;
+        height: 70px;
+        width: 155px;
+        object-fit: contain;
     }
 
-    .active{
+    .active {
         // border-bottom: 5px solid green;
         color: green !important;
         border-bottom: 2px solid green;
+        font-size: 20px;
     }
     .nav-item {
         font-weight: bolder !important;
         padding: 3%;
+        font-size: "18px";
 
-        .dropdown{
+        .dropdown {
             background-color: green;
             border-radius: 30px;
             margin-right: 20px;
-            .dropdown-toggle{
+            .dropdown-toggle {
                 color: white;
             }
         }
@@ -40,7 +42,8 @@
 
     .job-list {
         border-radius: 5px;
-        width: 100px;
+        width: 120px;
+        font-size: 20px;
         text-align: center;
         //color: black;
     }

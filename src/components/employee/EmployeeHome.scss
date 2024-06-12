@@ -4,7 +4,7 @@
     //background-color: rgb(234, 235, 235);
     .search-title-job {
         padding: 2vw 20vw;
-        background-image: url(../../05.jpg);
+        background-image: url(../../daihochaiphong.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-attachment: fixed;
@@ -14,11 +14,9 @@
         align-content: center;
         justify-content: center;
 
-
         .search-item {
             margin: 10px;
             border-radius: 5px !important;
-
         }
 
         .search-btn {
@@ -26,9 +24,7 @@
             align-content: center;
             justify-content: center;
             width: 150px;
-
         }
-
     }
 
     .create-cv {
@@ -44,14 +40,11 @@
                 text-align: center;
             }
         }
-
-
     }
 
     .body-content {
         padding: 2vw 10vw;
         background-color: rgb(234, 255, 232);
-
 
         .list-job {
             padding: 3% 2%;
@@ -99,13 +92,10 @@
                         border: 1px solid rgb(134, 236, 129);
                         //border-radius: 5px;
                         background-color: rgb(50, 211, 157);
-
                     }
 
                     .job-item {
                         margin: 3%;
-
-
 
                         .box-header {
                             padding-bottom: 2%;
@@ -143,7 +133,6 @@
                     }
                 }
             }
-
         }
 
         .job-slide {
@@ -168,15 +157,12 @@
                     margin-right: 10%;
                 }
 
-                svg{
+                svg {
                     color: white;
                     height: 30px;
                     width: 30px;
                 }
             }
-
-
-
 
             .slick-next::before {
                 color: black;
@@ -191,6 +177,5 @@
                 //margin-bottom: 5px;
             }
         }
-
     }
 }
